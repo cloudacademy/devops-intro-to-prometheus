@@ -6,7 +6,7 @@ This course accompanies the Cloud Academy course 'Intro to Prometheus'
 
 ## Don't want to wait around? 
 
-*Requirements*
+### Requirements
 - curl
 - tar
 - bash 
@@ -15,7 +15,7 @@ This course accompanies the Cloud Academy course 'Intro to Prometheus'
 If you want to get started with the examples shown in the course, clone this repo, and use the script(s) below to spin up a little prometheus environment with some Node Exporters!
 
 ```
-scripts/letsgo.bash
+bash scripts/letsgo.bash
 ```
 
 ## Resources for Prometheus Outside of Cloud Academy
