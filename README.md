@@ -1,3 +1,5 @@
+![icon for Prometheus](prometheus.png)
+
 # Intro-To-Prometheus
 
 This course accompanies the Cloud Academy course 'Intro to Prometheus'
