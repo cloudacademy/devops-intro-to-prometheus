@@ -6,13 +6,16 @@ This course accompanies the Cloud Academy course 'Intro to Prometheus'
 
 [To the course!](https://www.example.com)
 
-## Don't want to wait around? 
+## Don't want to wait around? Neither would I!
 
 ### Requirements
 - curl
 - tar
 - bash 
   - tested and validated on bash version 5.0.17(1)-release
+- Ports open on localhost
+  - 9090
+  - 8080-8083
 
 If you want to get started with the examples shown in the course, clone this repo, and use the script(s) below to spin up a little prometheus environment with some Node Exporters!
 
