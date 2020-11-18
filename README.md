@@ -1,4 +1,4 @@
-<div style="text-align:center"><img src="prometheus.png" /></div>
+![icon for Prometheus](prometheus.png)
 
 # Intro-To-Prometheus
 
