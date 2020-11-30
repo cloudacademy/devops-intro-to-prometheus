@@ -20,6 +20,8 @@ This course accompanies the Cloud Academy course 'Intro to Prometheus'
 If you want to get started with the examples shown in the course, clone this repo, and use the script(s) below to spin up a little prometheus environment with some Node Exporters!
 
 ```
+git clone https://github.com/cloudacademy/devops-intro-to-prometheus.git
+cd devops-intro-to-prometheus
 bash scripts/letsgo.bash
 ```
 

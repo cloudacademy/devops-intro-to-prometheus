@@ -37,7 +37,7 @@ echo "Starting Prometheus..."
 # Start Prometheus.
 # By default, Prometheus stores its database in ./data (flag --storage.tsdb.path).
 ./prometheus --config.file=prometheus.yml&
-sleep 1
+
 
 echo "Prometheus is started, navigate to localhost:9090 for UI or to localhost:9090/metrics for the RAW Prometheus metrics."
 
@@ -91,14 +91,14 @@ cat <<'EOF' >>./prometheus.yml
 rule_files:
   - 'prometheus.rules.yml'
 EOF
-sleep 3
+sleep 2
 
 echo "Restarting Prometheus to apply config changes"
 
 pkill prometheus
 ./prometheus --config.file=prometheus.yml&
 
-sleep 3
+sleep 1
 
 echo "
 ------------------------------------------------------------------------------------------------------
