@@ -17,7 +17,7 @@ global:
   # Attach these labels to any time series or alerts when communicating with
   # external systems (federation, remote storage, Alertmanager).
   external_labels:
-    monitor: 'codelab-monitor'
+    monitor: 'CloudAcademy-Prom-Demo'
 
 # A scrape configuration containing exactly one endpoint to scrape:
 # Here it's Prometheus itself.
@@ -60,7 +60,7 @@ echo "Altering Prometheus.yml..."
 cd ..
 
 cat <<'EOF' >>./prometheus.yml
-  - job_name:       'node'
+  - job_name: 'Prom1-node'
 
     # Override the global default and scrape targets from this job every 5 seconds.
     scrape_interval: 5s
@@ -68,11 +68,11 @@ cat <<'EOF' >>./prometheus.yml
     static_configs:
       - targets: ['localhost:8080', 'localhost:8081']
         labels:
-          group: 'production'
+          group: 'CloudAcademy-Prod'
 
       - targets: ['localhost:8082']
         labels:
-          group: 'canary'
+          group: 'CloudAcademy-Dev'
 EOF
 
 echo "Creating prometheus.rules.yml"
