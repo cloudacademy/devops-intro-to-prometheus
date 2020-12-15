@@ -22,7 +22,7 @@ If you want to get started with the examples shown in the course, clone this rep
 
 ```
 git clone https://github.com/cloudacademy/devops-intro-to-prometheus.git
-cd scripts/
+cd devops-intro-to-prometheus/scripts
 bash letsgo.bash
 ```
 
